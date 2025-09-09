@@ -10,15 +10,16 @@ import locale from '../locale/locale';
 //更多格式
 const luckysheetMoreFormat = {
     moneyFmtList: [
+         {"name": "美元",
+         "pos": "before",
+         "value": "$"
+        },
         {
             "name": "人民币",
             "pos": "before",
             "value": "¥"
-        }, {
-            "name": "美元",
-            "pos": "before",
-            "value": "$"
-        }, {
+        },
+        {
             "name": "欧元",
             "pos": "before",
             "value": "€"
