@@ -610,7 +610,7 @@ const luckysheetMoreFormat = {
         }, {
             "name": "印度卢比",
             "pos": "before",
-            "value": "?"
+            "value": "₹"
         }, {
             "name": "印度尼西亚卢比",
             "pos": "before",
@@ -951,7 +951,7 @@ const luckysheetMoreFormat = {
             {'name': currencyDetail.IraqiDinar,'pos': 'before','value': 'din'},
             {'name': currencyDetail.IranianRial,'pos': 'before','value': 'Rial'},
             {'name': currencyDetail.NewIsraeliShekel,'pos': 'before','value': '?'},
-            {'name': currencyDetail.IndianRupee,'pos': 'before','value': '?'},
+            {'name': currencyDetail.IndianRupee,'pos': 'before','value': '₹'},
             {'name': currencyDetail.IndonesianRupiah,'pos': 'before','value': 'Rp'},
             {'name': currencyDetail.JordanianDinar,'pos': 'before','value': 'din'},
             {'name': currencyDetail.VND,'pos': 'after','value': '?'},

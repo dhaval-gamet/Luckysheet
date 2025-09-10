@@ -157,8 +157,8 @@ export function createToolbarHtml() {
                 <div class="luckysheet-toolbar-button-inner-box luckysheet-inline-block"
                 style="user-select: none;">
                     <div class="luckysheet-icon luckysheet-inline-block " style="user-select: none;">
-                        <div aria-hidden="true" class="luckysheet-icon-img-container luckysheet-icon-img iconfont-luckysheet luckysheet-iconfont-jine"
-                        style="user-select: none;">
+                        <div aria-hidden="true" class="luckysheet-icon-img-container luckysheet-icon-img iconfont-luckysheet luckysheet-iconfont-dollar"
+                        style="user-select: none;">₹
                         </div>
                     </div>
                 </div>

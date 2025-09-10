@@ -331,11 +331,26 @@ const menuButton = {
         });
 
         //货币格式
-        $("#luckysheet-icon-currency").click(function() {
-            let d = editor.deepCopyFlowData(Store.flowdata); //取数据
+$("#luckysheet-icon-currency").click(function() {  
+    let range = luckysheet.getRange(); // user ka selection  
+    let d = editor.deepCopyFlowData(Store.flowdata);  
 
-            _this.updateFormat(d, "ct", "$ #.00");
-        });
+    for (let i = 0; i < range.length; i++) {  
+        let r1 = range[i].row[0], r2 = range[i].row[1];  
+        let c1 = range[i].column[0], c2 = range[i].column[1];  
+
+        for (let r = r1; r <= r2; r++) {  
+            for (let c = c1; c <= c2; c++) {  
+                if (d[r][c] != null && d[r][c].v != null && !isNaN(d[r][c].v)) {  
+                    d[r][c].m = "₹ " + parseFloat(d[r][c].v).toFixed(2);  
+                }  
+            }  
+        }  
+    }  
+
+    Store.flowdata = d;  
+    luckysheet.refresh();  
+});
 
         //百分比
         $("#luckysheet-icon-percent").click(function() {
