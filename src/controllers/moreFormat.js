@@ -10,6 +10,11 @@ import locale from '../locale/locale';
 //更多格式
 const luckysheetMoreFormat = {
     moneyFmtList: [
+        {
+            "name": "印度卢比",
+            "pos": "before",
+            "value": "₹"
+        },
          {"name": "美元",
          "pos": "before",
          "value": "$"
@@ -608,10 +613,6 @@ const luckysheetMoreFormat = {
             "pos": "before",
             "value": "?"
         }, {
-            "name": "印度卢比",
-            "pos": "before",
-            "value": "₹"
-        }, {
             "name": "印度尼西亚卢比",
             "pos": "before",
             "value": "Rp"
@@ -802,6 +803,7 @@ const luckysheetMoreFormat = {
         const locale_button = locale().button;
 
         this.moneyFmtList = [
+            {'name': currencyDetail.IndianRupee,'pos': 'before','value': '₹'},
             {'name': currencyDetail.RMB,'pos': 'before','value': '¥'},
             {'name': currencyDetail.USdollar,'pos': 'before','value': '$'},
             {'name': currencyDetail.EUR,'pos': 'before','value': '€'},
@@ -951,7 +953,6 @@ const luckysheetMoreFormat = {
             {'name': currencyDetail.IraqiDinar,'pos': 'before','value': 'din'},
             {'name': currencyDetail.IranianRial,'pos': 'before','value': 'Rial'},
             {'name': currencyDetail.NewIsraeliShekel,'pos': 'before','value': '?'},
-            {'name': currencyDetail.IndianRupee,'pos': 'before','value': '₹'},
             {'name': currencyDetail.IndonesianRupiah,'pos': 'before','value': 'Rp'},
             {'name': currencyDetail.JordanianDinar,'pos': 'before','value': 'din'},
             {'name': currencyDetail.VND,'pos': 'after','value': '?'},

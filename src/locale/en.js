@@ -6243,6 +6243,7 @@ export default {
         pageInfoFull: "Total ${total}，${totalPage} page，All data displayed",
     },
     currencyDetail: {
+        IndianRupee: "Indian Rupee",
         RMB: "RMB",
         USdollar: "US dollar",
         EUR: "EUR",
@@ -6392,7 +6393,6 @@ export default {
         IraqiDinar: "Iraqi Dinar",
         IranianRial: "Iranian Rial",
         NewIsraeliShekel: "New Israeli Shekel",
-        IndianRupee: "Indian Rupee",
         IndonesianRupiah: "Indonesian Rupiah",
         JordanianDinar: "Jordanian Dinar",
         VND: "VND",
