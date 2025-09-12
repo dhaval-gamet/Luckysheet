@@ -11,15 +11,15 @@ export default {
     showinfobar: true, //是否显示顶部名称栏
     showsheetbar: true, //是否显示底部表格名称区域
     showstatisticBar: true, //是否显示底部计数栏
-    pointEdit: false, //是否是编辑器插入表格模式
+    pointEdit: true, //是否是编辑器插入表格模式
     pointEditUpdate: null, //编辑器表格更新函数
     pointEditZoom: 1, //编辑器表格编辑时缩放比例
-    // menu: "undo|redo|freezenrow|freezencolumn|download|share|chart|pivot",
+    menu: "undo|redo|freezenrow|freezencolumn|download|share|chart|pivot",
     data: [{ "name": "Sheet1", color: "", "status": "1", "order": "0", "data": [], "config": {}, "index":0 }, { "name": "Sheet2", color: "", "status": "0", "order": "1", "data": [], "config": {}, "index":1  }, { "name": "Sheet3", color: "", "status": "0", "order": "2", "data": [], "config": {}, "index":2  }], //客户端sheet数据[sheet1, sheet2, sheet3]
-    title: "Luckysheet Demo", //表格的名称
+    title: "vedra bi", //表格的名称
     userInfo:false,// 右上角的用户信息展示样式，支持 1. boolean类型：false:不展示，true:展示默认 '<i style="font-size:16px;color:#ff6a00;" class="fa fa-taxi" aria-hidden="true"></i> rabbit' ，2. HTML模板字符串或者普通字符串，如：'<i style="font-size:16px;color:#ff6a00;" class="fa fa-taxi" aria-hidden="true"></i> Lucky'或者'用户名'， 3. 对象格式，设置 userImage：用户头像地址 和 userName：用户名 4. 不设置或者设置undefined同设置false
     userMenuItem: [{url:"www.baidu.com", "icon":'<i class="fa fa-folder" aria-hidden="true"></i>', "name":"我的表格"}, {url:"www.baidu.com", "icon":'<i class="fa fa-sign-out" aria-hidden="true"></i>', "name":"退出登陆"}], //点击右上角的用户信息弹出的菜单
-    myFolderUrl: "www.baidu.com", //左上角<返回按钮的链接
+    myFolderUrl: false, //左上角<返回按钮的链接
     config: {}, //表格行高、列宽、合并单元格、公式等设置
     fullscreenmode: true, //是否全屏模式，非全屏模式下，标记框不会强制选中。
     devicePixelRatio: window.devicePixelRatio, //设备比例，比例越大表格分标率越高
@@ -35,7 +35,7 @@ export default {
     enableAddRow: true,//允许添加行
     enableAddBackTop: true,//允许回到顶部
     // enablePage: false,//允许加载下一页
-    autoFormatw: false,  //自动格式化超过4位数的数字为 亿万格式 例：true or "true" or "TRUE"
+    autoFormatw: true,  //自动格式化超过4位数的数字为 亿万格式 例：true or "true" or "TRUE"
     accuracy: undefined,  //设置传输来的数值的精确位数，小数点后n位 传参数为数字或数字字符串，例： "0" 或 0
     pageInfo:{
         'queryExps':'',
